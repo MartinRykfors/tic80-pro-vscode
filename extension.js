@@ -22,7 +22,7 @@ function activate(context) {
       const cart = `${textEditor.document.uri.fsPath}`;
 
       const path = tic80ProSetup["executablePath"];
-      const args = [cart];
+      const args = [cart, "--skip", "--fft"];
 
       if (Tic80ProTerminal) Tic80ProTerminal.dispose();
 
